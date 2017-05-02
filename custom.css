@@ -1,0 +1,239 @@
+/**
+ * Social Media Aggregator Stylesheet
+ * Copyright (c) La Salle College High School, ALL RIGHTS RESERVED.
+ * This code is available, free and opensource, for educational and non-profit purposes.
+ * Any unauthorized commercial of this code is banned and subject to legal action.
+ */
+
+
+/* Buzz
+@-webkit-keyframes btn-default {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes btn-default {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+} */
+
+.btn-default {
+  display: inline-block;
+  border-radius: 0px 0px 0px 0px;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.align-left {
+	float: left;
+}
+
+div#text-resize {
+	overflow:hidden;
+}
+
+div.modal-body p.align-left {
+	position: relative;
+	padding: 10px;
+}
+div#text-resize{
+	padding-left: 10px;
+}
+div.modal-body p.align-right{
+	position: relative;
+	padding: 10px;
+}
+
+.align-right {
+	float: right;
+}
+
+.fa-times-circle-o {
+	float: right;  /* quickfix */
+	color: #bdc3c7;
+}
+
+.fa-times-circle-o:hover {
+	color : #336699;
+}
+
+/* fix wrapping issue */
+.soft-wrapping {
+       	overflow-wrap: break-word;
+        word-wrap: break-word;
+       	-ms-word-break: break-all;
+        word-break: break-word;
+        -ms-hyphens: auto;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+}
+
+.icon-color {
+	/*	color: #ecf0f1; */
+	color: #bdc3c7;
+}
+
+.icon-color:hover {
+	color: #003366;
+}
+
+.container {
+    background: #ecf0f1;
+}
+
+.row {
+  margin-right: -.9375rem;
+  margin-left: -.9375rem;
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: " ";
+}
+
+.row:after {
+  clear: both;
+}
+
+
+.row {
+    width: 95%;
+    margin: 3em auto;
+}
+
+
+.modal {
+	cursor: default; /* overwrite grid-item */
+}
+
+.modal-news-content {
+  padding: 0.8em;
+}
+
+.modal-footer {
+  padding: 0.8em;
+
+}
+
+/* CSS masonry grid system */
+
+.grid {
+    margin: 1.5em 0;
+    padding: 0;
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em;
+    font-size: .85em;
+    /* box-sizing: border-box; */
+}
+
+.grid-item {
+    display: inline-block;
+    /* actual styles defined in .grid-item-post wrapper */
+    -webkit-column-break-inside: avoid; /* suggested by http://stackoverflow.com/questions/18024269/css3-columns-background-cutoff */
+    -moz-column-break-inside: avoid;
+    column-break-inside: avoid;
+      display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* .grid-item-body in lieu of .panel-body to be more consistent with padding */
+.grid-item-body {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 0.8em;
+}
+
+/* grid footer container */
+.grid-item-footer {
+  padding: 0.8em;
+}
+
+/* .grid-item-post for all within the grid-item not including the modal */
+.grid-item-post {
+    display: inline-block;
+    position: floid;
+    background: #fff;
+    margin: 0 0 1.5em;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc; /* #abbaa44 */
+    box-sizing: border-box;
+    cursor:pointer; /* ipad fix */
+      display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* make y'all responsive */
+
+@media only screen and (min-width: 400px) {
+    .grid {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+} /* iPhone 5 */
+
+@media only screen and (min-width: 700px) {
+    .grid {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+} /* iPad Mini */
+
+@media only screen and (min-width: 900px) {
+    .grid {
+        -moz-column-count: 4;
+        -webkit-column-count: 4;
+        column-count: 4;
+    }
+} /* Large iPad */
+
+
+@media only screen and (min-width: 1280px) {
+    .grid {
+        -moz-column-count: 6;
+        -webkit-column-count: 6;
+        column-count: 6;
+    }
+} /* Desktop */
+
+@media only screen and (min-width: 1400px) {
+    .grid {
+        -moz-column-count: 6;
+        -webkit-column-count: 6;
+        column-count: 6;
+    }
+} /* Desktop */
+
+/*
+ FS Site Override
+*/
